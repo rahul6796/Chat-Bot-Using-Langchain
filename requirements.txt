@@ -1,7 +1,9 @@
 langchain
 streamlit
+langchain-core
 langchain-community
 langchain-openai
 langserve
 fastapi
 uvicorn
+sse_starlette
