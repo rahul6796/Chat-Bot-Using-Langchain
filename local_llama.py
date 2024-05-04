@@ -16,9 +16,6 @@ os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_API_KEY'] = os.getenv('LANGCHAIN_API_KEY')
 
 
-
-
-
 # prompt template
 
 prompt = ChatPromptTemplate.from_messages(
@@ -37,7 +34,7 @@ input_txt = st.text_input('Search')
 
 # ollama
 
-llm = Ollama(model = "Gemma")
+llm = Ollama(model = "gemma:2b")
 output_parser = StrOutputParser()
 chain = prompt|llm|output_parser
 
