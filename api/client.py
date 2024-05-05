@@ -6,7 +6,7 @@ import streamlit as st
 # calling api
 
 def get_api_response(input_text):
-    response = requests.post("http://localhost:8000/essay_ollama_model/invoke",
+    response = requests.post("http://localhost:8001/essay_ollama_model/invoke",
                              json= {'input': {'topic': input_text}})
     
     return response.json()['output']
